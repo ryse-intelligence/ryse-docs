@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<style>
+@page {
+  size: A4;
+  margin: 6mm 6mm 15mm 6mm;
+
+  @bottom-left {
+    content: "Ryse Intelligence  ·  AI + Software & Data Consultancy";
+    font-family: 'DM Sans', 'Helvetica Neue', sans-serif;
+    font-size: 7.5pt; font-weight: 700;
+    color: #45b7f7;
+    vertical-align: top; padding-top: 2mm;
+    border-top: 0.5pt solid #E5E7EB;
+  }
+  @bottom-right {
+    content: "0420 560 617  ·  ryanjiang5@gmail.com  ·  getryse.io  ·  2026-03-09";
+    font-family: 'DM Sans', 'Helvetica Neue', sans-serif;
+    font-size: 7pt; color: #6B7280;
+    vertical-align: top; padding-top: 2mm;
+    border-top: 0.5pt solid #E5E7EB;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: #FFFFFF;
+  font-family: 'DM Sans', 'Helvetica Neue', sans-serif;
+  font-size: 9.5pt;
+  color: #1A1F36;
+  line-height: 1.5;
+}
+
+/* ── HEADER ── */
+.doc-header {
+  background: #0A0A0A;
+  margin: -6mm -6mm 5mm -6mm;
+  padding: 8mm 10mm 7mm 10mm;
+}
+.eyebrow {
+  font-size: 6.5pt; font-weight: 700;
+  letter-spacing: 2.5px; text-transform: uppercase;
+  color: #45b7f7; margin-bottom: 2.5mm;
+}
+.doc-title {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 21pt; font-weight: 400; font-style: italic;
+  color: #FFFFFF; line-height: 1.22; margin-bottom: 2mm;
+}
+.doc-subtitle {
+  font-size: 9.5pt; font-weight: 300;
+  color: rgba(255,255,255,0.70); line-height: 1.5;
+}
+
+/* ── STRUCTURE ── */
+.section { margin-bottom: 4mm; }
+.section-label {
+  font-size: 7pt; font-weight: 700;
+  letter-spacing: 2px; text-transform: uppercase;
+  color: #6B7280; margin-bottom: 2.5mm;
+  padding-bottom: 1.5mm; border-bottom: 0.5pt solid #E5E7EB;
+}
+
+/* ── CARDS ── */
+.card {
+  background: #FFFFFF;
+  border-radius: 3pt; padding: 3mm 4mm;
+  margin-bottom: 2mm; page-break-inside: avoid;
+}
+.card-accent {
+  border-left: 2.5pt solid #45b7f7;
+  background: #EEF9FF;
+}
+
+/* ── CALLOUT (hero element — accent bg) ── */
+.callout {
+  background: #45b7f7;
+  color: white; padding: 4mm 5mm;
+  border-radius: 3pt; margin: 3mm 0;
+  page-break-inside: avoid;
+}
+.callout-serif {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 12.5pt; font-style: italic; line-height: 1.5; color: white;
+}
+.callout-body {
+  font-size: 9pt; color: rgba(255,255,255,0.9);
+  margin-top: 2mm; line-height: 1.5;
+}
+
+/* ── PROCESS STEPS ── */
+.step {
+  display: flex; gap: 3.5mm;
+  background: #FFFFFF; border-radius: 3pt;
+  padding: 3mm 4mm; margin-bottom: 2mm;
+  page-break-inside: avoid;
+}
+.step-num {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 18pt; color: #45b7f7;
+  line-height: 1; min-width: 8mm; flex-shrink: 0;
+}
+.step-body h4 {
+  font-size: 10pt; font-weight: 700;
+  color: #0A0A0A; margin-bottom: 1mm;
+}
+.step-body p { font-size: 9pt; color: #1A1F36; line-height: 1.45; }
+
+/* ── LIFECYCLE STAGES ── */
+.stage {
+  background: #FFFFFF; border-radius: 3pt;
+  padding: 3mm 4mm; margin-bottom: 2mm;
+  page-break-inside: avoid;
+}
+.stage-header {
+  display: flex; align-items: baseline; gap: 3mm;
+  padding-bottom: 1.5mm; margin-bottom: 2mm;
+  border-bottom: 0.5pt solid #E5E7EB;
+}
+.stage-n  { font-family: 'DM Serif Display', Georgia, serif; font-size: 12pt; color: #45b7f7; }
+.stage-name { font-weight: 700; font-size: 10pt; color: #0A0A0A; }
+.stage-time {
+  font-size: 7pt; font-weight: 600; color: #6B7280;
+  text-transform: uppercase; letter-spacing: 1px;
+}
+.stage-cols { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 3mm; }
+.col-tag {
+  font-size: 6.5pt; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 1.5mm;
+}
+.col-tag.sq  { color: #E55A1C; }
+.col-tag.ai  { color: #45b7f7; }
+.col-tag.out { color: #16A34A; }
+.col-text { font-size: 8.5pt; color: #1A1F36; line-height: 1.45; }
+
+/* ── AUDIT ROWS ── */
+.audit-row {
+  display: flex; gap: 3mm; align-items: flex-start;
+  padding: 2mm 2.5mm; border-radius: 2pt;
+  margin-bottom: 1mm; background: #FFFFFF;
+}
+.audit-row.fragile { border-left: 2.5pt solid #E55A1C; }
+.audit-row.stable  { border-left: 2.5pt solid #F59E0B; }
+.audit-row.opt     { border-left: 2.5pt solid #22C55E; }
+.audit-badge {
+  font-size: 6pt; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1px; padding: 1mm 2mm; border-radius: 2pt;
+  white-space: nowrap; min-width: 17mm; text-align: center; flex-shrink: 0;
+}
+.b-fragile { background: #FFF1EE; color: #E55A1C; }
+.b-stable  { background: #FFFBEB; color: #D97706; }
+.b-opt     { background: #F0FDF4; color: #16A34A; }
+.audit-checkbox {
+  width: 4mm; height: 4mm;
+  border: 1pt solid #E5E7EB; border-radius: 1pt;
+  flex-shrink: 0; margin-top: 0.5mm;
+}
+.audit-text { font-size: 9pt; color: #1A1F36; line-height: 1.45; flex: 1; }
+
+/* ── TRENDS ── */
+.trend {
+  background: #FFFFFF; border-radius: 3pt;
+  padding: 3mm 4mm; margin-bottom: 2.5mm;
+  page-break-inside: avoid;
+}
+.trend-rows { display: flex; flex-direction: column; gap: 1mm; }
+.trend-row  { display: flex; gap: 3mm; align-items: flex-start; }
+.trend-num  {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 20pt; color: #45b7f7; line-height: 1; margin-bottom: 2mm;
+}
+.trend-title { font-weight: 700; font-size: 10pt; color: #0A0A0A; margin-bottom: 2.5mm; }
+.trend-pill {
+  font-size: 6pt; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1px; padding: 1mm 2mm; border-radius: 2pt;
+  white-space: nowrap; min-width: 18mm; text-align: center; flex-shrink: 0;
+}
+.p-shift { background: #F3F4F6; color: #4B5563; }
+.p-ai    { background: #EEF9FF; color: #45b7f7; }
+.p-roi   { background: #F0FDF4; color: #16A34A; }
+.trend-row-text { font-size: 9pt; color: #1A1F36; line-height: 1.45; }
+
+/* ── COMPARISON TABLE ── */
+.compare { width: 100%; border-collapse: collapse; margin-bottom: 4mm; }
+.compare th {
+  font-size: 7pt; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.5px; padding: 2.5mm 3.5mm; text-align: left;
+}
+.th-challenge { background: #0A0A0A; color: white; width: 26%; }
+.th-tech      { background: #EEF9FF; color: #45b7f7; width: 37%; }
+.th-logistics { background: #45b7f7; color: white; width: 37%; }
+.compare td {
+  font-size: 8.5pt; padding: 3mm 3.5mm; vertical-align: top;
+  line-height: 1.45; border-bottom: 0.5pt solid #E5E7EB;
+}
+.td-challenge { background: #F3F4F6; font-weight: 600; color: #0A0A0A; }
+.td-tech      { background: #EEF9FF; color: #1A1F36; }
+.td-logistics { background: #F0FFF4; color: #1A1F36; }
+
+.no-break { page-break-inside: avoid; }
+h2, h3   { page-break-after: avoid; }
+
+</style></head>
+<body>
+<div class="doc-header">
+  <div class="eyebrow">Ryse Intelligence  ·  Introduction</div>
+  <h1 class="doc-title">Engineering Operational Leverage</h1>
+  <p class="doc-subtitle">At Ryse, we don't sell generic solutions — we solve your specific, painful bottlenecks.</p>
+</div>
+
+<div class="section">
+  <div class="section-label">The Problem with Generic Software in Logistics</div>
+  <div class="card card-accent">
+    <p><strong>Most tech vendors sell you a one-size-fits-all software license, hand you a manual, and walk away.</strong> You don't need another tool your team has to learn — you need your specific, painful problems solved across teams and operation checkpoints.</p>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-label">The Ryse Approach</div>
+  <div class="card">
+    <p>At Ryse, we are a specialised tech and AI consultancy. We bring the expertise, knowledge, and systems from global tech giants to local Aussie businesses. We don't force you into a single ecosystem — we analyze your unique <strong>"Profit Leakers,"</strong> design a bespoke strategy, and build custom automation that fits <em>your</em> workflow.</p>
+  </div>
+</div>
+
+<div class="callout">
+  <div class="callout-serif">Guaranteed problem-solution fit.</div>
+  <div class="callout-body">Your primary investment is simply the time to let us understand your business. We handle the heavy lifting of the technology.</div>
+</div>
+
+<div class="section">
+  <div class="section-label">Our Engagement Process</div>
+
+  <div class="step">
+    <div class="step-num">1</div>
+    <div class="step-body">
+      <h4>The Workflow X-Ray</h4>
+      <p>We sit with your Operations Manager. We observe the 90-minute morning data intake, the mid-day routing chaos, and the manual end-of-day billing — and quantify exactly how much this friction is costing you.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">2</div>
+    <div class="step-body">
+      <h4>The Architecture Blueprint</h4>
+      <p>We design a tailored AI+technology roadmap. Whether automating manifest ingestion or deploying predictive FTD alerts, we show you the expected ROI before any commitment.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">3</div>
+    <div class="step-body">
+      <h4>Precision Implementation</h4>
+      <p>We build and deploy solutions without ripping out your core systems. We build intelligent, automated layers that connect your existing tools and bridge the manual gaps.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">4</div>
+    <div class="step-body">
+      <h4>Enablement &amp; Change Management</h4>
+      <p>Technology is useless if your dispatchers hate it. We are deeply involved on the floor, training your team until the new automated workflow becomes second nature.</p>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-label">Limited Offer — This Month Only</div>
+  <div class="card card-accent">
+    <p>We are offering <strong>3 local logistics firms</strong> a complimentary <strong>25-Minute Workflow X-Ray</strong> this month. No sales pitch — just a whiteboard session to map out how much your manual data intake and delivery failures are actually costing you.</p>
+  </div>
+</div>
+
+</body></html>

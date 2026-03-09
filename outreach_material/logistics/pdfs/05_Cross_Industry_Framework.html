@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<style>
+@page {
+  size: A4;
+  margin: 6mm 6mm 15mm 6mm;
+
+  @bottom-left {
+    content: "Ryse Intelligence  ·  AI + Software & Data Consultancy";
+    font-family: 'DM Sans', 'Helvetica Neue', sans-serif;
+    font-size: 7.5pt; font-weight: 700;
+    color: #45b7f7;
+    vertical-align: top; padding-top: 2mm;
+    border-top: 0.5pt solid #E5E7EB;
+  }
+  @bottom-right {
+    content: "0420 560 617  ·  ryanjiang5@gmail.com  ·  getryse.io  ·  2026-03-09";
+    font-family: 'DM Sans', 'Helvetica Neue', sans-serif;
+    font-size: 7pt; color: #6B7280;
+    vertical-align: top; padding-top: 2mm;
+    border-top: 0.5pt solid #E5E7EB;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: #FFFFFF;
+  font-family: 'DM Sans', 'Helvetica Neue', sans-serif;
+  font-size: 9.5pt;
+  color: #1A1F36;
+  line-height: 1.5;
+}
+
+/* ── HEADER ── */
+.doc-header {
+  background: #0A0A0A;
+  margin: -6mm -6mm 5mm -6mm;
+  padding: 8mm 10mm 7mm 10mm;
+}
+.eyebrow {
+  font-size: 6.5pt; font-weight: 700;
+  letter-spacing: 2.5px; text-transform: uppercase;
+  color: #45b7f7; margin-bottom: 2.5mm;
+}
+.doc-title {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 21pt; font-weight: 400; font-style: italic;
+  color: #FFFFFF; line-height: 1.22; margin-bottom: 2mm;
+}
+.doc-subtitle {
+  font-size: 9.5pt; font-weight: 300;
+  color: rgba(255,255,255,0.70); line-height: 1.5;
+}
+
+/* ── STRUCTURE ── */
+.section { margin-bottom: 4mm; }
+.section-label {
+  font-size: 7pt; font-weight: 700;
+  letter-spacing: 2px; text-transform: uppercase;
+  color: #6B7280; margin-bottom: 2.5mm;
+  padding-bottom: 1.5mm; border-bottom: 0.5pt solid #E5E7EB;
+}
+
+/* ── CARDS ── */
+.card {
+  background: #FFFFFF;
+  border-radius: 3pt; padding: 3mm 4mm;
+  margin-bottom: 2mm; page-break-inside: avoid;
+}
+.card-accent {
+  border-left: 2.5pt solid #45b7f7;
+  background: #EEF9FF;
+}
+
+/* ── CALLOUT (hero element — accent bg) ── */
+.callout {
+  background: #45b7f7;
+  color: white; padding: 4mm 5mm;
+  border-radius: 3pt; margin: 3mm 0;
+  page-break-inside: avoid;
+}
+.callout-serif {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 12.5pt; font-style: italic; line-height: 1.5; color: white;
+}
+.callout-body {
+  font-size: 9pt; color: rgba(255,255,255,0.9);
+  margin-top: 2mm; line-height: 1.5;
+}
+
+/* ── PROCESS STEPS ── */
+.step {
+  display: flex; gap: 3.5mm;
+  background: #FFFFFF; border-radius: 3pt;
+  padding: 3mm 4mm; margin-bottom: 2mm;
+  page-break-inside: avoid;
+}
+.step-num {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 18pt; color: #45b7f7;
+  line-height: 1; min-width: 8mm; flex-shrink: 0;
+}
+.step-body h4 {
+  font-size: 10pt; font-weight: 700;
+  color: #0A0A0A; margin-bottom: 1mm;
+}
+.step-body p { font-size: 9pt; color: #1A1F36; line-height: 1.45; }
+
+/* ── LIFECYCLE STAGES ── */
+.stage {
+  background: #FFFFFF; border-radius: 3pt;
+  padding: 3mm 4mm; margin-bottom: 2mm;
+  page-break-inside: avoid;
+}
+.stage-header {
+  display: flex; align-items: baseline; gap: 3mm;
+  padding-bottom: 1.5mm; margin-bottom: 2mm;
+  border-bottom: 0.5pt solid #E5E7EB;
+}
+.stage-n  { font-family: 'DM Serif Display', Georgia, serif; font-size: 12pt; color: #45b7f7; }
+.stage-name { font-weight: 700; font-size: 10pt; color: #0A0A0A; }
+.stage-time {
+  font-size: 7pt; font-weight: 600; color: #6B7280;
+  text-transform: uppercase; letter-spacing: 1px;
+}
+.stage-cols { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 3mm; }
+.col-tag {
+  font-size: 6.5pt; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 1.5mm;
+}
+.col-tag.sq  { color: #E55A1C; }
+.col-tag.ai  { color: #45b7f7; }
+.col-tag.out { color: #16A34A; }
+.col-text { font-size: 8.5pt; color: #1A1F36; line-height: 1.45; }
+
+/* ── AUDIT ROWS ── */
+.audit-row {
+  display: flex; gap: 3mm; align-items: flex-start;
+  padding: 2mm 2.5mm; border-radius: 2pt;
+  margin-bottom: 1mm; background: #FFFFFF;
+}
+.audit-row.fragile { border-left: 2.5pt solid #E55A1C; }
+.audit-row.stable  { border-left: 2.5pt solid #F59E0B; }
+.audit-row.opt     { border-left: 2.5pt solid #22C55E; }
+.audit-badge {
+  font-size: 6pt; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1px; padding: 1mm 2mm; border-radius: 2pt;
+  white-space: nowrap; min-width: 17mm; text-align: center; flex-shrink: 0;
+}
+.b-fragile { background: #FFF1EE; color: #E55A1C; }
+.b-stable  { background: #FFFBEB; color: #D97706; }
+.b-opt     { background: #F0FDF4; color: #16A34A; }
+.audit-checkbox {
+  width: 4mm; height: 4mm;
+  border: 1pt solid #E5E7EB; border-radius: 1pt;
+  flex-shrink: 0; margin-top: 0.5mm;
+}
+.audit-text { font-size: 9pt; color: #1A1F36; line-height: 1.45; flex: 1; }
+
+/* ── TRENDS ── */
+.trend {
+  background: #FFFFFF; border-radius: 3pt;
+  padding: 3mm 4mm; margin-bottom: 2.5mm;
+  page-break-inside: avoid;
+}
+.trend-rows { display: flex; flex-direction: column; gap: 1mm; }
+.trend-row  { display: flex; gap: 3mm; align-items: flex-start; }
+.trend-num  {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 20pt; color: #45b7f7; line-height: 1; margin-bottom: 2mm;
+}
+.trend-title { font-weight: 700; font-size: 10pt; color: #0A0A0A; margin-bottom: 2.5mm; }
+.trend-pill {
+  font-size: 6pt; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1px; padding: 1mm 2mm; border-radius: 2pt;
+  white-space: nowrap; min-width: 18mm; text-align: center; flex-shrink: 0;
+}
+.p-shift { background: #F3F4F6; color: #4B5563; }
+.p-ai    { background: #EEF9FF; color: #45b7f7; }
+.p-roi   { background: #F0FDF4; color: #16A34A; }
+.trend-row-text { font-size: 9pt; color: #1A1F36; line-height: 1.45; }
+
+/* ── COMPARISON TABLE ── */
+.compare { width: 100%; border-collapse: collapse; margin-bottom: 4mm; }
+.compare th {
+  font-size: 7pt; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.5px; padding: 2.5mm 3.5mm; text-align: left;
+}
+.th-challenge { background: #0A0A0A; color: white; width: 26%; }
+.th-tech      { background: #EEF9FF; color: #45b7f7; width: 37%; }
+.th-logistics { background: #45b7f7; color: white; width: 37%; }
+.compare td {
+  font-size: 8.5pt; padding: 3mm 3.5mm; vertical-align: top;
+  line-height: 1.45; border-bottom: 0.5pt solid #E5E7EB;
+}
+.td-challenge { background: #F3F4F6; font-weight: 600; color: #0A0A0A; }
+.td-tech      { background: #EEF9FF; color: #1A1F36; }
+.td-logistics { background: #F0FFF4; color: #1A1F36; }
+
+.no-break { page-break-inside: avoid; }
+h2, h3   { page-break-after: avoid; }
+
+</style></head>
+<body>
+<div class="doc-header">
+  <div class="eyebrow">Ryse Intelligence  ·  Why Ryse</div>
+  <h1 class="doc-title">The Cross-Industry Success Framework</h1>
+  <p class="doc-subtitle">Applying Tier-1 Tech Giant architecture to local logistics operations.</p>
+</div>
+
+<div class="section">
+  <div class="section-label">Our Background</div>
+  <div class="card card-accent">
+    <p>Our background is designing and engineering complex, high-stakes data, software, and AI architectures at global tier-1 tech companies like <strong>Atlassian</strong>, <strong>Canva</strong>, and <strong>Oracle</strong>. We are bringing those exact frameworks to logistics — to help fleets scale efficiently, integrate legacy software, and turn their data into a competitive advantage.</p>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-label">Enterprise Tech → Logistics: Direct Translation</div>
+  <table class="compare">
+    <thead>
+      <tr>
+        <th class="th-challenge">Challenge</th>
+        <th class="th-tech">Tech Giant Experience</th>
+        <th class="th-logistics">Logistics Application</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="td-challenge">Unifying Fragmented Systems</td>
+        <td class="td-tech">Orchestrating millions of distinct API requests and disparate data streams from global enterprise clients into a single, unified, real-time data warehouse — without dropping a single byte.</td>
+        <td class="td-logistics"><strong>Eradicating Data Silos.</strong> We apply enterprise data orchestration to seamlessly connect fragmented WMS, routing software, and client portals — ensuring information flows autonomously from order creation to final invoice.</td>
+      </tr>
+      <tr>
+        <td class="td-challenge">Scaling Without Proportional Headcount</td>
+        <td class="td-tech">Building "elastic" cloud infrastructures that automatically scale to handle 10x spikes in user traffic — without requiring 10x more engineers.</td>
+        <td class="td-logistics"><strong>Non-Linear Operational Growth.</strong> We implement AI + automation that allows your existing team to handle double the freight volume by automating the administrative tail and optimising asset utilisation.</td>
+      </tr>
+      <tr>
+        <td class="td-challenge">Moving from Reactive to Predictive</td>
+        <td class="td-tech">Leveraging advanced AI to analyse billions of micro-interactions, automating engineering workflows, and predicting system bottlenecks before they occur.</td>
+        <td class="td-logistics"><strong>Predictive Operational Intelligence.</strong> We deploy predictive AI models over your historical data to forecast volume spikes, flag at-risk routes, and predict delays <em>before</em> the truck leaves the depot.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="callout">
+  <div class="callout-serif">The Ryse Advantage.</div>
+  <div class="callout-body">You are the absolute expert in trucks, pallets, and physical operations. We are the experts in AI, data, automation, and building software systems and integrations. Together, we build a foundation that doesn't just manage your current operation — it accelerates your growth.</div>
+</div>
+
+</body></html>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<style>
+@page {
+  size: A4;
+  margin: 6mm 6mm 15mm 6mm;
+
+  @bottom-left {
+    content: "Ryse Intelligence  ·  AI + Software & Data Consultancy";
+    font-family: 'DM Sans', 'Helvetica Neue', sans-serif;
+    font-size: 7.5pt; font-weight: 700;
+    color: #45b7f7;
+    vertical-align: top; padding-top: 2mm;
+    border-top: 0.5pt solid #E5E7EB;
+  }
+  @bottom-right {
+    content: "0420 560 617  ·  ryanjiang5@gmail.com  ·  getryse.io  ·  2026-03-09";
+    font-family: 'DM Sans', 'Helvetica Neue', sans-serif;
+    font-size: 7pt; color: #6B7280;
+    vertical-align: top; padding-top: 2mm;
+    border-top: 0.5pt solid #E5E7EB;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: #FFFFFF;
+  font-family: 'DM Sans', 'Helvetica Neue', sans-serif;
+  font-size: 9.5pt;
+  color: #1A1F36;
+  line-height: 1.5;
+}
+
+/* ── HEADER ── */
+.doc-header {
+  background: #0A0A0A;
+  margin: -6mm -6mm 5mm -6mm;
+  padding: 8mm 10mm 7mm 10mm;
+}
+.eyebrow {
+  font-size: 6.5pt; font-weight: 700;
+  letter-spacing: 2.5px; text-transform: uppercase;
+  color: #45b7f7; margin-bottom: 2.5mm;
+}
+.doc-title {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 21pt; font-weight: 400; font-style: italic;
+  color: #FFFFFF; line-height: 1.22; margin-bottom: 2mm;
+}
+.doc-subtitle {
+  font-size: 9.5pt; font-weight: 300;
+  color: rgba(255,255,255,0.70); line-height: 1.5;
+}
+
+/* ── STRUCTURE ── */
+.section { margin-bottom: 4mm; }
+.section-label {
+  font-size: 7pt; font-weight: 700;
+  letter-spacing: 2px; text-transform: uppercase;
+  color: #6B7280; margin-bottom: 2.5mm;
+  padding-bottom: 1.5mm; border-bottom: 0.5pt solid #E5E7EB;
+}
+
+/* ── CARDS ── */
+.card {
+  background: #FFFFFF;
+  border-radius: 3pt; padding: 3mm 4mm;
+  margin-bottom: 2mm; page-break-inside: avoid;
+}
+.card-accent {
+  border-left: 2.5pt solid #45b7f7;
+  background: #EEF9FF;
+}
+
+/* ── CALLOUT (hero element — accent bg) ── */
+.callout {
+  background: #45b7f7;
+  color: white; padding: 4mm 5mm;
+  border-radius: 3pt; margin: 3mm 0;
+  page-break-inside: avoid;
+}
+.callout-serif {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 12.5pt; font-style: italic; line-height: 1.5; color: white;
+}
+.callout-body {
+  font-size: 9pt; color: rgba(255,255,255,0.9);
+  margin-top: 2mm; line-height: 1.5;
+}
+
+/* ── PROCESS STEPS ── */
+.step {
+  display: flex; gap: 3.5mm;
+  background: #FFFFFF; border-radius: 3pt;
+  padding: 3mm 4mm; margin-bottom: 2mm;
+  page-break-inside: avoid;
+}
+.step-num {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 18pt; color: #45b7f7;
+  line-height: 1; min-width: 8mm; flex-shrink: 0;
+}
+.step-body h4 {
+  font-size: 10pt; font-weight: 700;
+  color: #0A0A0A; margin-bottom: 1mm;
+}
+.step-body p { font-size: 9pt; color: #1A1F36; line-height: 1.45; }
+
+/* ── LIFECYCLE STAGES ── */
+.stage {
+  background: #FFFFFF; border-radius: 3pt;
+  padding: 3mm 4mm; margin-bottom: 2mm;
+  page-break-inside: avoid;
+}
+.stage-header {
+  display: flex; align-items: baseline; gap: 3mm;
+  padding-bottom: 1.5mm; margin-bottom: 2mm;
+  border-bottom: 0.5pt solid #E5E7EB;
+}
+.stage-n  { font-family: 'DM Serif Display', Georgia, serif; font-size: 12pt; color: #45b7f7; }
+.stage-name { font-weight: 700; font-size: 10pt; color: #0A0A0A; }
+.stage-time {
+  font-size: 7pt; font-weight: 600; color: #6B7280;
+  text-transform: uppercase; letter-spacing: 1px;
+}
+.stage-cols { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 3mm; }
+.col-tag {
+  font-size: 6.5pt; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 1.5mm;
+}
+.col-tag.sq  { color: #E55A1C; }
+.col-tag.ai  { color: #45b7f7; }
+.col-tag.out { color: #16A34A; }
+.col-text { font-size: 8.5pt; color: #1A1F36; line-height: 1.45; }
+
+/* ── AUDIT ROWS ── */
+.audit-row {
+  display: flex; gap: 3mm; align-items: flex-start;
+  padding: 2mm 2.5mm; border-radius: 2pt;
+  margin-bottom: 1mm; background: #FFFFFF;
+}
+.audit-row.fragile { border-left: 2.5pt solid #E55A1C; }
+.audit-row.stable  { border-left: 2.5pt solid #F59E0B; }
+.audit-row.opt     { border-left: 2.5pt solid #22C55E; }
+.audit-badge {
+  font-size: 6pt; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1px; padding: 1mm 2mm; border-radius: 2pt;
+  white-space: nowrap; min-width: 17mm; text-align: center; flex-shrink: 0;
+}
+.b-fragile { background: #FFF1EE; color: #E55A1C; }
+.b-stable  { background: #FFFBEB; color: #D97706; }
+.b-opt     { background: #F0FDF4; color: #16A34A; }
+.audit-checkbox {
+  width: 4mm; height: 4mm;
+  border: 1pt solid #E5E7EB; border-radius: 1pt;
+  flex-shrink: 0; margin-top: 0.5mm;
+}
+.audit-text { font-size: 9pt; color: #1A1F36; line-height: 1.45; flex: 1; }
+
+/* ── TRENDS ── */
+.trend {
+  background: #FFFFFF; border-radius: 3pt;
+  padding: 3mm 4mm; margin-bottom: 2.5mm;
+  page-break-inside: avoid;
+}
+.trend-rows { display: flex; flex-direction: column; gap: 1mm; }
+.trend-row  { display: flex; gap: 3mm; align-items: flex-start; }
+.trend-num  {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 20pt; color: #45b7f7; line-height: 1; margin-bottom: 2mm;
+}
+.trend-title { font-weight: 700; font-size: 10pt; color: #0A0A0A; margin-bottom: 2.5mm; }
+.trend-pill {
+  font-size: 6pt; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1px; padding: 1mm 2mm; border-radius: 2pt;
+  white-space: nowrap; min-width: 18mm; text-align: center; flex-shrink: 0;
+}
+.p-shift { background: #F3F4F6; color: #4B5563; }
+.p-ai    { background: #EEF9FF; color: #45b7f7; }
+.p-roi   { background: #F0FDF4; color: #16A34A; }
+.trend-row-text { font-size: 9pt; color: #1A1F36; line-height: 1.45; }
+
+/* ── COMPARISON TABLE ── */
+.compare { width: 100%; border-collapse: collapse; margin-bottom: 4mm; }
+.compare th {
+  font-size: 7pt; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.5px; padding: 2.5mm 3.5mm; text-align: left;
+}
+.th-challenge { background: #0A0A0A; color: white; width: 26%; }
+.th-tech      { background: #EEF9FF; color: #45b7f7; width: 37%; }
+.th-logistics { background: #45b7f7; color: white; width: 37%; }
+.compare td {
+  font-size: 8.5pt; padding: 3mm 3.5mm; vertical-align: top;
+  line-height: 1.45; border-bottom: 0.5pt solid #E5E7EB;
+}
+.td-challenge { background: #F3F4F6; font-weight: 600; color: #0A0A0A; }
+.td-tech      { background: #EEF9FF; color: #1A1F36; }
+.td-logistics { background: #F0FFF4; color: #1A1F36; }
+
+.no-break { page-break-inside: avoid; }
+h2, h3   { page-break-after: avoid; }
+
+</style></head>
+<body>
+<div class="doc-header">
+  <div class="eyebrow">Ryse Intelligence  ·  Self-Assessment Tool</div>
+  <h1 class="doc-title">The 60-Second Logistics Profitability Audit</h1>
+  <p class="doc-subtitle">Are manual processes capping your growth? Check the box that best describes your current daily operations.</p>
+</div>
+
+<div class="section">
+  <div class="section-label">Section 1 — The Morning Rush (Data &amp; Dispatch)</div>
+  <div class="audit-row fragile">
+    <div class="audit-checkbox"></div>
+    <span class="audit-badge b-fragile">Fragile</span>
+    <div class="audit-text">We spend over 1 hour daily manually standardising client data (CSVs, Portals) before routes can even be planned.</div>
+  </div>
+  <div class="audit-row stable">
+    <div class="audit-checkbox"></div>
+    <span class="audit-badge b-stable">Stable</span>
+    <div class="audit-text">Data intake is partially automated, but still requires manual review and formatting.</div>
+  </div>
+  <div class="audit-row opt">
+    <div class="audit-checkbox"></div>
+    <span class="audit-badge b-opt">Optimised</span>
+    <div class="audit-text">Client data is ingested, standardised, and ready for dispatch automatically in seconds.</div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-label">Section 2 — Route Execution &amp; Mid-Day Exceptions</div>
+  <div class="audit-row fragile">
+    <div class="audit-checkbox"></div>
+    <span class="audit-badge b-fragile">Fragile</span>
+    <div class="audit-text">When a truck breaks down or a rush order drops, it takes 30+ minutes of manual phone calls and white-boarding to re-route.</div>
+  </div>
+  <div class="audit-row stable">
+    <div class="audit-checkbox"></div>
+    <span class="audit-badge b-stable">Stable</span>
+    <div class="audit-text">We have software, but dispatchers still have to manually drag-and-drop stops to fix mid-day issues.</div>
+  </div>
+  <div class="audit-row opt">
+    <div class="audit-checkbox"></div>
+    <span class="audit-badge b-opt">Optimised</span>
+    <div class="audit-text">The system autonomously proposes optimised re-routes instantly when exceptions occur.</div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-label">Section 3 — The Last-Mile Leak (First-Time Delivery)</div>
+  <div class="audit-row fragile">
+    <div class="audit-checkbox"></div>
+    <span class="audit-badge b-fragile">Fragile</span>
+    <div class="audit-text">Our First-Time Delivery (FTD) failure rate is over 10%. We only know about a failed delivery after the driver leaves the doorstep.</div>
+  </div>
+  <div class="audit-row stable">
+    <div class="audit-checkbox"></div>
+    <span class="audit-badge b-stable">Stable</span>
+    <div class="audit-text">We send generic tracking links, but still suffer from high recipient no-shows.</div>
+  </div>
+  <div class="audit-row opt">
+    <div class="audit-checkbox"></div>
+    <span class="audit-badge b-opt">Optimised</span>
+    <div class="audit-text">We use predictive text and automated workflows to confirm recipient availability before the truck arrives.</div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-label">Section 4 — End-of-Day Overhead (Reconciliation)</div>
+  <div class="audit-row fragile">
+    <div class="audit-checkbox"></div>
+    <span class="audit-badge b-fragile">Fragile</span>
+    <div class="audit-text">It takes 1–2 hours daily to manually cross-reference Proof of Delivery (PODs) with manifests to generate invoices.</div>
+  </div>
+  <div class="audit-row stable">
+    <div class="audit-checkbox"></div>
+    <span class="audit-badge b-stable">Stable</span>
+    <div class="audit-text">We have a system, but billing disputes and high Days Sales Outstanding (DSO) are still common.</div>
+  </div>
+  <div class="audit-row opt">
+    <div class="audit-checkbox"></div>
+    <span class="audit-badge b-opt">Optimised</span>
+    <div class="audit-text">PODs automatically reconcile against manifests, generating flawless, dispute-free invoices instantly.</div>
+  </div>
+</div>
+
+<div class="callout">
+  <div class="callout-serif">If you checked "Fragile" in two or more categories — you're likely losing profit to invisible operational friction.</div>
+  <div class="callout-body">At Ryse, we don't sell generic software subscriptions. We solve your specific, painful bottlenecks and engineer the systems that move you to "Optimised" — without disrupting your current operations.</div>
+</div>
+
+</body></html>
