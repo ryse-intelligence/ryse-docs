@@ -10,7 +10,7 @@ Here are the three trends defining profitable logistics operations in 2026:
 
 **The Shift:** Historically, 3PLs struggled to integrate fragmented client systems, legacy WMS, and modern routing software, resulting in massive manual data entry.
 
-**The AI Application:** Leading operators are deploying 'middleware AI' that autonomously translates and normalizes data between completely different systems in real-time, requiring zero human intervention.
+**The AI Application:** Leading operators are deploying 'middleware AI' that autonomously translates and normalises data between completely different systems in real-time, requiring zero human intervention.
 
 **The ROI:** Early adopters managed to eliminate 30+ hours of weekly manual administration, allowing them to onboard new enterprise clients in days rather than months.
 
