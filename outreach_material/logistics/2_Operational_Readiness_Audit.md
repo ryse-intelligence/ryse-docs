@@ -49,6 +49,8 @@ If you checked **"Fragile"** in two or more categories, your business is likely 
 
 At **Ryse**, we don’t sell generic software subscriptions. We solve your specific, painful bottlenecks. We engineer the systems that move you to **"Optimized"**, guaranteeing problem-solution fit—without disrupting your current operations.
 
+---
+
 <!-- FOOTER_START -->
 
 Ryse Intelligence | AI + Software & Data Consultancy | 2026-03-09

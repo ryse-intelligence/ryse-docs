@@ -41,3 +41,11 @@ Optimised: PODs automatically reconcile against manifests, generating flawless, 
 If you checked **"Fragile"** in two or more categories, your business is likely losing profits and customers to invisible operational friction (redundant fuel, labor, and administrative overhead).
 
 _At Ryse, we engineer the AI-powered systems and integrations that move you to "Optimized"—without retraining and disrupting your current operations._
+
+
+<!-- FOOTER_START -->
+
+Ryse Intelligence | AI + Software & Data Consultancy | 2026-03-09
+Contact: 0420560617 | Email: ryanjiang5@gmail.com | Web: getryse.io
+
+<!-- FOOTER_END -->
