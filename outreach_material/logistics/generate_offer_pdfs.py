@@ -212,6 +212,24 @@ body {{
   line-height: 1.45;
 }}
 
+/* ── AMBIENT NOTE ── */
+.ambient-note {{
+  border-left: 2pt solid {B['divider']};
+  padding: 2.5mm 0 2.5mm 4mm;
+  margin: 4mm 0 3mm 0;
+  page-break-inside: avoid;
+}}
+.ambient-note {{
+  font-size: 8pt;
+  font-style: italic;
+  color: {B['muted']};
+  line-height: 1.55;
+}}
+.ambient-note-icon {{
+  color: {B['divider']};
+  margin-right: 1.5mm;
+}}
+
 /* ── URGENCY STRIP ── */
 .urgency-strip {{
   background: {B['primary']};
@@ -268,6 +286,11 @@ def build_html(prospect_label, site_qr_b64, cal_qr_b64_data):
     <img src="{cal_qr_b64_data}" alt="Calendar booking QR code" />
     <div class="qr-card-caption">30 mins · No obligation · Keep the site either way</div>
   </div>
+</div>
+
+<div class="ambient-note">
+  <span class="ambient-note-icon">&#x2014;</span>
+  This outreach — the lead research, market analysis, copywriting, and graphic design — was produced entirely by our AI agents and the specialised workflows we've built around them. We have no researchers or designers on staff. If this is what AI can do for <em>us</em>, imagine what it could do for <em>your</em> team.
 </div>
 
 <div class="urgency-strip">
