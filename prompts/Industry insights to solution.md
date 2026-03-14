@@ -23,7 +23,8 @@ Whatever solution you design to address these challenges, it must strictly adher
 - **Integration-Ready:** Acknowledge that enterprise users have entrenched tools. The architecture must include a robust integration layer to plug seamlessly into existing systems of record that are too hard to replace on day one.
 
 # Expected Deliverables (Per Challenge)
-For **EACH** of the selected challenges, output a highly detailed `.md` file in the `./docs` folder. Each document must contain:
+For **EACH** of the selected challenges, output highly detailed `.md` files in the `./docs` folder (if the user has specified another output directory, follow that instruction instead). 
+Each selected challenge will yield the following (you should determine if it's one or multiple files based on the content length):
 
 ## 1. Product Strategy & Disruption Angle
    - **The Pain:** Clearly define the specific challenge and how it impacts the persona.
